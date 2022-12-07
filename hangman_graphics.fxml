@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WindowController">
+   <top>
+      <Label fx:id="underscores" text="temporary" BorderPane.alignment="TOP_LEFT">
+         <graphic>
+            <Label prefHeight="17.0" prefWidth="118.0" text="find the word: " />
+         </graphic>
+      </Label>
+   </top>
+   <padding>
+      <Insets left="10.0" top="5.0" />
+   </padding>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button_Q" mnemonicParsing="false" onAction="#qPressed" text="Q" />
+            <Button fx:id="button_W" mnemonicParsing="false" onAction="#wPressed" text="W" GridPane.columnIndex="1" />
+            <Button fx:id="button_E" mnemonicParsing="false" onAction="#ePressed" text="E" GridPane.columnIndex="2" />
+            <Button fx:id="button_R" mnemonicParsing="false" onAction="#rPressed" text="R" GridPane.columnIndex="3" />
+            <Button fx:id="button_T" mnemonicParsing="false" onAction="#tPressed" text="T" GridPane.columnIndex="4" />
+            <Button fx:id="button_Y" mnemonicParsing="false" onAction="#yPressed" text="Y" GridPane.columnIndex="5" />
+            <Button fx:id="button_U" mnemonicParsing="false" onAction="#uPressed" text="U" GridPane.columnIndex="6" />
+            <Button fx:id="button_I" mnemonicParsing="false" onAction="#iPressed" text="I" GridPane.columnIndex="7" />
+            <Button fx:id="button_O" mnemonicParsing="false" onAction="#oPressed" text="O" GridPane.columnIndex="8" />
+            <Button fx:id="button_P" mnemonicParsing="false" onAction="#pPressed" text="P" GridPane.columnIndex="9" />
+            <Button fx:id="button_A" mnemonicParsing="false" onAction="#aPressed" text="A" GridPane.rowIndex="1" />
+            <Button fx:id="button_S" mnemonicParsing="false" onAction="#sPressed" text="S" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button_D" mnemonicParsing="false" onAction="#dPressed" text="D" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button_F" mnemonicParsing="false" onAction="#fPressed" text="F" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="button_G" mnemonicParsing="false" onAction="#gPressed" text="G" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="button_H" mnemonicParsing="false" onAction="#hPressed" text="H" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="button_J" mnemonicParsing="false" onAction="#jPressed" text="J" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="button_K" mnemonicParsing="false" onAction="#kPressed" text="K" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="button_L" mnemonicParsing="false" onAction="#lPressed" text="L" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button fx:id="button_Z" mnemonicParsing="false" onAction="#zPressed" text="Z" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button_X" mnemonicParsing="false" onAction="#xPressed" text="X" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="button_C" mnemonicParsing="false" onAction="#cPressed" text="C" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="button_V" mnemonicParsing="false" onAction="#vPressed" text="V" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="button_B" mnemonicParsing="false" onAction="#bPressed" text="B" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="button_N" mnemonicParsing="false" onAction="#nPressed" text="N" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="button_M" mnemonicParsing="false" onAction="#mPressed" text="M" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="100.0" right="100.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </bottom>
+   <center>
+      <Canvas fx:id="canvas" height="250.0" width="250.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="238.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Used Letters:">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="used" text="letters" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <Button mnemonicParsing="false" onAction="#newGameButtonPress" text="New Game" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+</BorderPane>
